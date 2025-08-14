@@ -1,0 +1,41 @@
+#hero {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hero-mid{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-mid h1 {
+    color: var(--cinza-escuro);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-size: 130px;
+    font-weight: 800;
+    letter-spacing: -5px;
+}
+
+.hero-title-1 {
+    position: relative;
+    top: 60px;
+}
+
+.hero-mid p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-bottom-fundo {
+    display: flex;
+    align-items: center;
+}
+
+.hero-bottom-fundo img {
+    width: 35%;
+}
