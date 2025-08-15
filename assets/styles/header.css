@@ -26,17 +26,33 @@ nav ul {
     align-items: center;
 }
 
-
-
-nav ul li a{
+nav ul li a {
+    position: relative;
     text-decoration: none;
     color: inherit;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 2px;
-    transition: all ease .3s;
+    transition: all ease 0.3s;
 }
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width ease 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    color: var(--cinza);
+}
+
 
 nav ul li a:hover {
     color: var(--cinza);
